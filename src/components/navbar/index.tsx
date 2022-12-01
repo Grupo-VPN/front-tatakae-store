@@ -25,8 +25,8 @@ export default function NavScroll() {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link href="/Home">Produtos</Nav.Link>
-              <Nav.Link href="/Carrinho">Carrinho</Nav.Link>
+              {/*               <Nav.Link href="/Home">Produtos</Nav.Link>
+              <Nav.Link href="/Carrinho">Carrinho</Nav.Link> */}
               <Nav.Link
                 href="/"
                 className="deslogar"

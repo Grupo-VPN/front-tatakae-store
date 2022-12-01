@@ -98,7 +98,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       });
       setUser(data);
 
-      navigate("/Home", {
+      navigate("/Inicio", {
         state: {
           id: String(data.id),
         },
