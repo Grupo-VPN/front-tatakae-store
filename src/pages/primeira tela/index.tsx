@@ -2,8 +2,10 @@ import { parseCookies } from "nookies";
 import { useCallback, useContext } from "react";
 import { AuthContext } from "../../hooks/auth";
 import { useLocation, useNavigate } from "react-router-dom";
+import * as S from './styles'
 import { useForm } from "react-hook-form";
 import { api } from "../../service/api";
+import NavScroll from "../../components/navbar";
 interface InputsProps {
   idTela: string;
   IdProduto: number;
@@ -51,8 +53,17 @@ export default function TelaPrincipal() {
     mode: "onBlur",
   });
   return (
-    <form onSubmit={handleSubmit(inicioMonitorar)}>
-      <button type="submit">Iniciar a busca por produtos</button>
-    </form>
+    <S.Container>
+      <header>
+        <NavScroll/>
+      </header>
+      <main>
+        <div className="form">
+          <form onSubmit={handleSubmit(inicioMonitorar)}>
+            <button className='button' type="submit">Iniciar a busca por produtos</button>
+          </form>
+        </div>
+      </main>
+    </S.Container>
   );
 }
