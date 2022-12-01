@@ -1,6 +1,5 @@
 import NavScroll from "../../components/navbar";
 import Table from "react-bootstrap/Table";
-import Button from "react-bootstrap/Button";
 import * as S from "./styles";
 import { useLocation, useNavigate } from "react-router-dom";
 import { parseCookies } from "nookies";

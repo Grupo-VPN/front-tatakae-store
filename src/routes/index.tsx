@@ -2,6 +2,7 @@ import { Route, Routes as RoutesWrapper } from 'react-router-dom';
 import Carrinho from "../pages/carrinho";
 import Home from "../pages/home";
 import Login from "../pages/login";
+import Monitoramento from '../pages/monitoramento';
 import Pagamento from "../pages/pagamento";
 import TelaPrincipal from '../pages/primeira tela';
 import Produto from "../pages/produto";
@@ -15,6 +16,7 @@ export default function Rotas() {
       <Route path="/Produto/:id" element={<Produto />} />
       <Route path="/Carrinho" element={<Carrinho />} />
       <Route path="/Pagamento" element={<Pagamento />} />
+      <Route path='/Monitoramento' element={<Monitoramento/>}/>
     </RoutesWrapper>
   );
 }
